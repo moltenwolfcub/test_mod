@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "test_mod_mwc:block/smooth_slate_block"
+        }
+    }
+}

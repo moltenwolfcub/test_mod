@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+      "end": "test_mod_mwc:block/slate_block_top",
+      "side": "test_mod_mwc:block/slate_block"
+    }
+  }

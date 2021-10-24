@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "test_mod_mwc:slate_block"
+      }
+    ],
+    "result": {
+      "item": "test_mod_mwc:slate_piece",
+      "count": 9
+    }
+  }

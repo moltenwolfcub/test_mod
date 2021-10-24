@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      "###",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "test_mod_mwc:slate_piece"
+      }
+    },
+    "result": {
+      "item": "test_mod_mwc:slate_block"
+    }
+  }
