@@ -24,6 +24,8 @@ public class TestMod implements ModInitializer {
 
 	public static final Block SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2.25F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block SMOOTH_SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+	public static final Block DISCO_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(1.5F, 1.4F).sounds(BlockSoundGroup.AMETHYST_BLOCK).breakByTool(FabricToolTags.PICKAXES).luminance(15));
+
 
 	@Override
 	public void onInitialize() {
@@ -31,8 +33,10 @@ public class TestMod implements ModInitializer {
 
 		Registry.register(Registry.BLOCK, new Identifier("test_mod_mwc", "slate_block"), SLATE_BLOCK);
 		Registry.register(Registry.BLOCK, new Identifier("test_mod_mwc", "smooth_slate_block"), SMOOTH_SLATE_BLOCK);
+		Registry.register(Registry.BLOCK, new Identifier("test_mod_mwc", "disco_block"), DISCO_BLOCK);
 
 		Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "slate_block"), new BlockItem(SLATE_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS).maxCount(64).rarity(Rarity.COMMON)));
 		Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "smooth_slate_block"), new BlockItem(SMOOTH_SLATE_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS).maxCount(64).rarity(Rarity.COMMON)));
+		Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "disco_block"), new BlockItem(DISCO_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS).maxCount(64).rarity(Rarity.COMMON)));
 	}
 }

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "ryg",
+      "ygb",
+      "gbp"
+    ],
+    "key": {
+      "r": {
+        "item": "minecraft:red_concrete"
+      },
+      "y": {
+        "item": "minecraft:yellow_concrete"
+      },
+      "g": {
+        "item": "minecraft:lime_concrete"
+      },
+      "b": {
+        "item": "minecraft:light_blue_concrete"
+      },
+      "p": {
+        "item": "minecraft:purple_concrete"
+      }
+    },
+    "result": {
+      "item": "test_mod_mwc:disco_block"
+    }
+  }

@@ -1,5 +1,6 @@
 {
     "item.test_mod_mwc.slate_piece": "Slate Piece",
     "block.test_mod_mwc.slate_block": "Slate Block",
-    "block.test_mod_mwc.smooth_slate_block": "Smooth Slate Block"
+    "block.test_mod_mwc.smooth_slate_block": "Smooth Slate Block",
+    "block.test_mod_mwc.disco_block": "Disco Block"
 }
