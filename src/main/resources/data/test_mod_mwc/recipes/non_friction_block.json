@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "SSS",
+      "GRG",
+      "GGG"
+    ],
+    "key": {
+      "R": {
+        "item": "minecraft:redstone_block"
+      },
+      "G": {
+          "item": "minecraft:glass"
+      },
+      "S": {
+          "item": "test_mod_mwc:smooth_slate_block"
+      }
+    },
+    "result": {
+      "item": "test_mod_mwc:disco_block"
+    }
+  }
