@@ -1,5 +1,8 @@
 {
     "item.test_mod_mwc.slate_piece": "Slate Piece",
+    "item.test_mod_mwc.corn": "Corn",
+
+    "item.test_mod_mwc.pop_corn": "Pop Corn",
 
     "block.test_mod_mwc.slate_block": "Slate Block",
     "block.test_mod_mwc.smooth_slate_block": "Smooth Slate Block",

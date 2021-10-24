@@ -33,21 +33,29 @@ public class TestMod implements ModInitializer {
 			stacks.add(new ItemStack(TestMod.DISCO_BLOCK));
 			stacks.add(new ItemStack(TestMod.NON_FRICTION_BLOCK));
 			stacks.add(ItemStack.EMPTY);
+			stacks.add(new ItemStack(TestMod.CORN));
+			stacks.add(new ItemStack(TestMod.POP_CORN));
 		})
 		.build();
 
 
 	public static final Item SLATE_PIECE = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(64).rarity(Rarity.COMMON));
+	public static final Item CORN = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(64).rarity(Rarity.COMMON));
+
+	public static final Item POP_CORN = new Item(new Item.Settings().group(ItemGroup.FOOD).maxCount(64).rarity(Rarity.COMMON).food(FoodItems.POP_CORN));
 
 	public static final Block SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2.25F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block SMOOTH_SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block DISCO_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(1.5F, 1.4F).sounds(BlockSoundGroup.AMETHYST_BLOCK).breakByTool(FabricToolTags.PICKAXES).luminance(15));
-	public static final Block NON_FRICTION_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(0F, 0F).breakInstantly().slipperiness(10));
+	public static final Block NON_FRICTION_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(0F, 0F).breakInstantly().slipperiness(3));
 
 
 	@Override
 	public void onInitialize() {
         Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "slate_piece"), SLATE_PIECE);
+        Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "corn"), CORN);
+
+		Registry.register(Registry.ITEM, new Identifier("test_mod_mwc", "pop_corn"), POP_CORN);
 
 		Registry.register(Registry.BLOCK, new Identifier("test_mod_mwc", "slate_block"), SLATE_BLOCK);
 		Registry.register(Registry.BLOCK, new Identifier("test_mod_mwc", "smooth_slate_block"), SMOOTH_SLATE_BLOCK);
