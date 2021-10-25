@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+      "item": "test_mod_mwc:corn"
+    },
+    "result": "test_mod_mwc:pop_corn",
+    "experience": 1,
+    "cookingtime": 40
+}
