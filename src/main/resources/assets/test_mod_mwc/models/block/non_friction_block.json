@@ -1,47 +1,51 @@
-{   "parent": "block/block",
-    "ambientocclusion": false,
-    "textures": {
-        "particle": "block/glass",
-        "glass": "block/glass",
-        "smooth_slate": "test_mod_mwc:block/slate_block_top",
-        "redstone_block": "block/redstone_block"
-    },
-    "elements": [
-        {   "__comment": "Glass shell",
-            "from": [ 0, 0, 0 ],
-            "to": [ 16, 13, 16 ],
-            "faces": {
-                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
-                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" }
-            }
-        },
-        {   "__comment": "smooth_slate base",
-            "from": [ 0, 16, 0 ],
-            "to": [ 16, 13, 16 ],
-            "faces": {
-                "down":  { "uv": [ 2,  2, 14, 14 ], "texture": "#smooth_slate" },
-                "up":    { "uv": [ 2,  2, 14, 14 ], "texture": "#smooth_slate" },
-                "north": { "uv": [ 2, 13, 14, 16 ], "texture": "#smooth_slate" },
-                "south": { "uv": [ 2, 13, 14, 16 ], "texture": "#smooth_slate" },
-                "west":  { "uv": [ 2, 13, 14, 16 ], "texture": "#smooth_slate" },
-                "east":  { "uv": [ 2, 13, 14, 16 ], "texture": "#smooth_slate" }
-            }
-        },
-        {   "__comment": "Inner redstone_block texture",
-            "from": [ 3, 3, 3 ],
-            "to": [ 13, 14, 13 ],
-            "faces": {
-                "down":  { "uv": [ 3, 3, 13, 13 ], "texture": "#redstone_block" },
-                "up":    { "uv": [ 3, 3, 13, 13 ], "texture": "#redstone_block" },
-                "north": { "uv": [ 3, 2, 13, 13 ], "texture": "#redstone_block" },
-                "south": { "uv": [ 3, 2, 13, 13 ], "texture": "#redstone_block" },
-                "west":  { "uv": [ 3, 2, 13, 13 ], "texture": "#redstone_block" },
-                "east":  { "uv": [ 3, 2, 13, 13 ], "texture": "#redstone_block" }
-            }
-        }
-    ]
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/glass",
+		"glass": "block/glass",
+		"smooth_slate": "test_mod_mwc:block/slate_block_top",
+		"redstone_block": "block/redstone_block"
+	},
+	"elements": [
+		{
+			"name": "Glass shell",
+			"from": [0, 0, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#glass"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#glass"}
+			}
+		},
+		{
+			"name": "smooth_slate top",
+			"from": [0, 13, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [2, 13, 14, 16], "texture": "#smooth_slate"},
+				"east": {"uv": [2, 13, 14, 16], "texture": "#smooth_slate"},
+				"south": {"uv": [2, 13, 14, 16], "texture": "#smooth_slate"},
+				"west": {"uv": [2, 13, 14, 16], "texture": "#smooth_slate"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#smooth_slate"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#smooth_slate"}
+			}
+		},
+		{
+			"name": "Inner redstone_block texture",
+			"from": [3, 3, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [3, 2, 13, 13], "texture": "#redstone_block"},
+				"east": {"uv": [3, 2, 13, 13], "texture": "#redstone_block"},
+				"south": {"uv": [3, 2, 13, 13], "texture": "#redstone_block"},
+				"west": {"uv": [3, 2, 13, 13], "texture": "#redstone_block"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#redstone_block"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#redstone_block"}
+			}
+		}
+	]
 }
