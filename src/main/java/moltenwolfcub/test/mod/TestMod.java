@@ -47,7 +47,7 @@ public class TestMod implements ModInitializer {
 	public static final Block SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2.25F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block SMOOTH_SLATE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(2F, 6F).sounds(BlockSoundGroup.TUFF).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 	public static final Block DISCO_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(1.5F, 1.4F).sounds(BlockSoundGroup.AMETHYST_BLOCK).breakByTool(FabricToolTags.PICKAXES).luminance(15));
-	public static final Block NON_FRICTION_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(0F, 0F).breakInstantly().slipperiness(3));
+	public static final Block NON_FRICTION_BLOCK = new Block(FabricBlockSettings.of(Material.DECORATION).strength(0F, 0F).breakInstantly().slipperiness(1).nonOpaque());
 
 
 	@Override

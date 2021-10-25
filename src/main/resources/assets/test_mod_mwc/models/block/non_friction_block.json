@@ -3,13 +3,13 @@
     "textures": {
         "particle": "block/glass",
         "glass": "block/glass",
-        "smooth_slate": "test_mod_mwc:block/smooth_slate_block",
+        "smooth_slate": "test_mod_mwc:block/slate_block_top",
         "redstone_block": "block/redstone_block"
     },
     "elements": [
         {   "__comment": "Glass shell",
             "from": [ 0, 0, 0 ],
-            "to": [ 16, 15.8, 16 ],
+            "to": [ 16, 13, 16 ],
             "faces": {
                 "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
                 "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
@@ -21,7 +21,7 @@
         },
         {   "__comment": "smooth_slate base",
             "from": [ 0, 16, 0 ],
-            "to": [ 16, 13.1, 16 ],
+            "to": [ 16, 13, 16 ],
             "faces": {
                 "down":  { "uv": [ 2,  2, 14, 14 ], "texture": "#smooth_slate" },
                 "up":    { "uv": [ 2,  2, 14, 14 ], "texture": "#smooth_slate" },
